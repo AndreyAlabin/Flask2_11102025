@@ -3,9 +3,10 @@ class Config:
 
 class ProductionConfig(Config):
     DEBUG = False
-    SRVER_NAME = "0.0.0.0:8888"
+    SERVER_NAME='0.0.0.0'
+    PORT=4444
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    SRVER_NAME = "0.0.0.0"
+    SERVER_NAME = '0.0.0.0'
     PORT = 3333
